@@ -24,7 +24,8 @@ jobs:
                     ymp repo --update
                     ymp it bash make --no-emerge
                     ymp build .
-                    mv *.ymp /root/output/
+                    mkdir /output
+                    mv *.ymp /output/
 
           - uses: "marvinpinto/action-automatic-releases@latest"
             with:
